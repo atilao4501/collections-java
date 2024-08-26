@@ -1,4 +1,4 @@
-import main.java.list.ListaTarefas;
+import main.java.list.OperacoesBasicas.ListaTarefas;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -12,10 +12,12 @@ public class Main {
         }
 
         System.out.print("o número de tarefas é: "+ listaTarefas.ObterNumeroTotalDeTarefas() + "\n");
+//
+//        for (String descricoes : listaTarefas.ObterDescricoesTarefas()){
+//            System.out.print(descricoes + "\n");
+//        }
 
-        for (String descricoes : listaTarefas.ObterDescricoesTarefas()){
-            System.out.print(descricoes + "\n");
-        }
+        System.out.println(listaTarefas.ObterDescricoesTarefas());
 
         }
     }
