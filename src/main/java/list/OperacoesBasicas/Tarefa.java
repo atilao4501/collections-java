@@ -11,5 +11,10 @@ public class Tarefa {
         return _descricao;
     }
 
-
+    @Override
+    public String toString() {
+        return "Tarefa{" +
+                "_descricao='" + _descricao + '\'' +
+                '}';
+    }
 }

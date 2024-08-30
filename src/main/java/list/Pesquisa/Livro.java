@@ -1,5 +1,7 @@
 package main.java.list.Pesquisa;
 
+import main.java.list.OperacoesBasicas.ListaTarefas;
+
 import java.util.Date;
 
 public class Livro {
@@ -35,3 +37,4 @@ public class Livro {
                 '}';
     }
 }
+

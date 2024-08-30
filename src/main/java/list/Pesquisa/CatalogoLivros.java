@@ -1,5 +1,7 @@
 package main.java.list.Pesquisa;
 
+import main.java.list.OperacoesBasicas.ListaTarefas;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,5 +57,36 @@ public class CatalogoLivros {
             }
         }
         return livrosPorTitulo;
+    }
+
+    public int ObterNumeroTotalTarefas(){
+        return listaLivros.size();
+    }
+
+    public void ObterDescricoesTarefas(){
+        System.out.println(listaLivros);
+    }
+
+    public static void main(String[] args) {
+        ListaTarefas listaTarefas = new ListaTarefas();
+
+        System.out.println("Número de elementos na lista: " + listaTarefas.ObterNumeroTotalDeTarefas());
+
+        listaTarefas.AdicionarTarefa("Tarefa 1");
+
+        System.out.println("Número de elementos na lista: " + listaTarefas.ObterNumeroTotalDeTarefas());
+
+        listaTarefas.AdicionarTarefa("Tarefa 1");
+        listaTarefas.AdicionarTarefa("Tarefa 2");
+
+        System.out.println("Número de elementos na lista: " + listaTarefas.ObterNumeroTotalDeTarefas());
+        System.out.println("Descrições das tarefas: " + listaTarefas.ObterDescricoesTarefas());
+
+        listaTarefas.RemoverTarefa("Tarefa 1");
+        System.out.println("Número de elementos após remover: " + listaTarefas.ObterNumeroTotalDeTarefas());
+
+
+
+
     }
 }
